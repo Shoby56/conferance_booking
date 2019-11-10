@@ -1,0 +1,163 @@
+<app-navbar></app-navbar>
+<section id="booking_form">
+    <form action="" method="post">
+
+        <!-- Time Selection -->
+        <section>
+
+            <div class="row">
+
+                <!-- Hidden Fields -->
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input type="text" name="_employee_id" id="input_employee_id" hidden>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <input type="text" name="_location" id="input_location" hidden>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="form-group">
+                                <label for="input_start_date" class="col-sm-2 control-label">Start_date:</label>
+                                <div class="col-sm-10">
+                                    <input type="date" name="_start_date" id="input_start_date" class="form-control"
+                                        value="" required="required" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                            <div class="form-group">
+                                <label for="input_start_time" class="col-sm-2 control-label">Start_time:</label>
+                                <div class="col-sm-10">
+                                    <input type="time" name="_start_time" id="input_start_time" class="form-control"
+                                        value="" required="required" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+
+
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <div class="form-group">
+                                <label for="input_end_date" class="col-sm-2 control-label">End_date:</label>
+                                <div class="col-sm-10">
+                                    <input type="date" name="_end_date" id="input_end_date" class="form-control" value=""
+                                        required="required" title="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+                            <div class="form-group">
+                                <label for="input_end_time" class="col-sm-2 control-label">End_time:</label>
+                                <div class="col-sm-10">
+                                    <input type="time" name="_end_time" id="input_end_time" class="form-control" value=""
+                                        required="required" title="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <hr>
+        <!-- Room Filter -->
+        <section>
+            <div class="row">
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="type" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Room Type
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Conferance</a>
+                            <a class="dropdown-item" href="#">Discussion</a>
+                            <a class="dropdown-item" href="#">Training</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="type" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Room ID
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">R1</a>
+                            <a class="dropdown-item" href="#">R2</a>
+                            <a class="dropdown-item" href="#">R3</a>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <br>
+        </section>
+        <!-- List of rooms with details -->
+        <section>
+
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>RoomID</th>
+                            <th>F1</th>
+                            <th>F2</th>
+                            <th>F3</th>
+                            <th>F4</th>
+                            <th>F5</th>
+                            <th>Capacity</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R1</td>
+                            <td>F1</td>
+                            <td>F2</td>
+                            <td>F3</td>
+                            <td>F4</td>
+                            <td>F5</td>
+                            <td>10</td>
+                            <td>
+                                <!-- Disable other buttons in the form after selecting it -->
+                                <!-- Add an on click change button color -->
+                                <button type="button" class="btn btn-success">Add</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+        <div class="row">
+
+            <button type="submit" class="btn btn-large btn-block btn-info">Book Room</button>
+
+        </div>
+
+    </form>
+</section>
